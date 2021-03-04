@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: black;
+        color: green;
+        font-family: monospace;
+        font-size: large;
+        text-align: center;
+    }
+    button {
+        background-color: white;
+        color: rgb(0, 0, 0);
+        font-family: monospace;
+        font-size: medium;
+        padding: auto;
+        align-items: center;
+    }
+    p1 {
+        color: orange;
+        font-size: x-large; 
+    }
+    h1 {
+        color:green;
+        font-family: monospace;
+        font-size: xx-large; 
+        text-align: center;  
+    }
+    h2 {
+        color: rgb(253, 252, 252);
+        font-family: monospace;
+        font-size: medium; 
+        text-align: center;  
+    }
+</style>
+<body>
+    <div class="testContent">
+        <h1>Welcome to the CoRAcore Scan Page!</h1>
+	<p1>Input a Target.</p1>
+	<ul>
+		<form action = "" method = "post">
+		<label for="target">Target:</label>
+		<input type="text" id="target" name="target" value="cora-vuetify-dev.herokuapp.com"><br><input type="submit" value="Submit"><br><br>
+		</form>
+	</ul>
+        <p1>Select which Nmap Scan you would like to operate (Time estimate: 5-15 minutes).</p1>
+        <ul>
+            <form action = "" method = "post"><button name="scan" value="1"> Basic</button></form>
+            <form action = "" method = "post"><button name="scan" value="2"> TCP SYN Scan </button></form>
+            <form action = "" method = "post"><button name="scan" value="3"> TCP ACK Scan </button></form>
+            <form action = "" method = "post"><button name="scan" value="4"> Aggressive Scan </button></form>
+            <form action = "" method = "post"><button name="scan" value="5"> Service Version Scan </button></form>
+        </ul>  
+        <p1>Select the Uniscan button to run a Uniscan (Time estimate: 30-45 Minutes).</p1>
+        <ul>
+            <form action = "" method = "post"><button name="scan" value="6"> Uniscan Scan</button></form>
+        </ul>  
+
+        <p1>Select the Nikto button to run a Nikto Scan (Time estimate: 30-90 Minutes).</p1>
+        <ul>
+            <form action = "" method = "post"><button name="scan" value="7"> Nikto Scan</button></form>
+        </ul>
+
+        <p1>Select which Burp-Suite check you would like to perform (Time estimate: 1-15 Minutes).</p1>
+        <ul>
+            <form action = "" method = "post"><button name="scan" value="8"> Vulnerable Javascript Dependency</button></form>
+            <form action = "" method = "post"><button name="scan" value="9"> Client-side HTTP Parameter Pollution (reflected)</button></form>
+            <form action = "" method = "post"><button name="scan" value="p"> Source Code Disclosure</button></form>
+	    <form action = "" method = "post"><button name="scan" value="r"> Robots.txt File Present</button></form>
+        </ul>
+
+        <p1>Select the link to begin using Nessus (Time estimate: 45-90 Minutes).</p1>
+        <ul>
+            <a href="https://localhost:8834/" title="Go to the Nessus web-tool">Open a link to go to Nessus</a>
+        </ul>
+        <h2><n>Scan times will vary by computer running docker.</n></h2>  
+    </div>
+</body>

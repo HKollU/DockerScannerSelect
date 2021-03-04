@@ -1,0 +1,5 @@
+#!/bin/bash
+curl -i -s -k -X $'GET' \
+    -H $"$1" -H $'Upgrade-Insecure-Requests: 1' -H $'Accept: */*' -H $'Accept-Language: en-US,en-GB;q=0.9,en;q=0.8' -H $'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36' -H $'Connection: close' -H $'Cache-Control: max-age=0' -H $'Accept-Encoding: gzip, deflate' \
+    -b $'XSRF-TOKEN=eyJpdiI6IkNwY0xTNWR4MzVVVUFMVUlmaEdqaGc9PSIsInZhbHVlIjoiZWhVQTFMU1dcL1FpZ3VTamh1eHVmSE5MUTUzNldMWmVPcGx2ZWYxanNKbFk1MkNGWGw5RlwvcmZkKzBXMHJzZWdoR3RtY1hpMDJNQkd5YVkwc21Vd0JvcFI4YjRNbjBhZytrQWVQSHljVmtJc2JTZnRabU94RXllN2VBQWRtVFBLTyIsIm1hYyI6IjM1NWY1MTBmMjYxZGY1NzAwMzczZDc4ZGM2NGY2ZjdjZWM3Nzc1MjViOGFjOGRhYzAyMmI5ZGE4OTA3ZmU0ZTIifQ%3D%3D; laravel_session=eyJpdiI6IkRkaE5BWUtxb3k5czZRa1JJck1haWc9PSIsInZhbHVlIjoiM0FVNUNpeUlVZHY3OFRWYzdrZE0xU3dhXC8yblpOMHRBV3BiSU5HMHNrQmRmUGorNWxBSUMwZW1ZWkJsSXkreWlpVmpkWEoxZG03UFBaNFdxM3NnM1pveTdxNVh5TGVuYUtSN1dqakxkc0pYSzV3ZHRwc1dyK2YweW9nOWgrU05jIiwibWFjIjoiNGRkY2I0YWFlMmZkZTRmZmU5NjJjZGNiYWM5ZDgxY2JiOGZhNGI3MjE0NzEyOWY0NzAzOGI1MjBmOTNiOTZiOSJ9' \
+    $"$1"'/js/app.js?id=18b23cc09a67b8f1aa1d'>Source.txt && cat Source.txt
