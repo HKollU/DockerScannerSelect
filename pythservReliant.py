@@ -1,7 +1,7 @@
 import http.server
 import socketserver
 import subprocess
-target = 'cora-vuetify-dev.herokuapp.com'
+target = 'google.com'
 class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
 	def _set_response(self):
 		self.send_response(200)
