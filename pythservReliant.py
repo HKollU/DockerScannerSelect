@@ -20,6 +20,10 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
 			target=str(post_data)
 			target = target[:-1]
 			target = target[9:]
+			if target[-1] =='F' and target[-2] == '2' and target[-3] == '%':
+				target = target[:3]
+			target = target.replace("http%3A%2F%2F",'')
+			target = target.replace("https%3A%2F%2F",'')
 			self.wfile.write(('target set to '+target + '<br> Please return to homepage to continue!').encode('utf-8'))
 			print('Please return to homepage to continue!') 
 		elif "1" in str(post_data):
